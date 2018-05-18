@@ -350,7 +350,7 @@
                     var delta_btc = (coin_qty[i]*cur_pb - coin_valbtc[i])*100/coin_valbtc[i];
                     //var stat_usd = '$' + cur_statusd.toString();
 
-                    portsummary += '<tr><td style="text-align:center"><img style="width:40px;height:40px" class = "img-rounded" src="'+ coin_img[i] + '"><br><a href="https://coinmarketcap.com/currencies/' + res2[0] + '/" target="_blank" >' + coin_name[i] + '</a></td><td>' + cur_mc + '</td><td>' + cur_pu.toFixed(4).toString() + ' USD' + '</td><td>' + cur_v24h + '</td>';
+                    portsummary += '<tr><td style="text-align:center"><img style="width:40px;height:40px" class = "img-rounded" src="'+ coin_img[i] + '"><br><a href="https://coinmarketcap.com/currencies/' + gv_symbols[res2[0]]["website_slug"] + '/" target="_blank" >' + coin_name[i] + '</a></td><td>' + cur_mc + '</td><td>' + cur_pu.toFixed(4).toString() + ' USD' + '</td><td>' + cur_v24h + '</td>';
                     if(cur_c1hr < 0){
                        portsummary += '<td style="color:red">' + cur_c1hr + '%</td>';
                        }
